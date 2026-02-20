@@ -1,0 +1,255 @@
+= Projeto Fin-Flow
+:subtitle: Documento de Especificação de Requisitos.
+:toc:
+:toc-title: Sumário (Tabela de Conteúdos)
+:sectnums:
+:toclevels: 3
+
+++++
+<div style="display: flex; align-items: center; gap: 15px;">
+  <img src="Images/logo-Fin-Flow.jpeg" width="80" 
+       style="border-radius: 50%;">
+  <h1 style="margin: 0;">Fin-Flow</h1>
+</div>
+++++
+
+== Visão Geral do Sistema Fin-Flow
+
+O Aplicativo *Fin-Flow* tem como objetivo auxiliar usuários no controle de suas finanças pessoais, permitindo registrar receitas e despesas, acompanhar saldos, definir metas financeiras e visualizar relatórios que apoiem a tomada de decisões financeiras.
+
+O sistema será voltado para dispositivos móveis (Android), com possibilidade de expansão para versão web.
+
+== Stakeholders (Partes Interessadas)
+
+=== Usuário Final
+* Pessoa física que deseja controlar seus gastos e receitas.
+
+=== Desenvolvedor
+* Responsável pela implementação e manutenção do sistema.
+
+=== Administrador do Sistema
+* Responsável por gerenciar usuários, categorias padrão e manutenção geral.
+
+== Requisitos Funcionais (RF)
+
+Os requisitos funcionais descrevem o que o sistema deve fazer.
+
+=== RF01 – Cadastro de Usuário
+
+O sistema deve permitir que o usuário realize cadastro utilizando:
+
+* E-mail e senha;
+* Ou autenticação via Google.
+
+=== RF02 – Login e Autenticação
+
+O sistema deve permitir que o usuário faça login de forma segura e mantenha a sessão ativa.
+
+* E-mail e senha.
+
+=== RF03 – Registro de Receitas
+
+O sistema deve permitir que o usuário:
+
+* Cadastre receitas (recebimento);
+* Informe valor;
+* Data;
+* Categoria;
+* Descrição.
+
+=== RF04 – Registro de Despesas
+
+O sistema deve permitir que o usuário:
+
+* Cadastre despesas;
+* Informe valor;
+* Data;
+* Categoria;
+* Forma de pagamento;
+* Descrição.
+
+=== RF05 – Gerenciamento de Categorias
+
+O sistema deve permitir:
+
+* Criar, editar e excluir categorias de receitas e despesas;
+* Utilizar categorias padrão (ex: alimentação, transporte, lazer).
+
+=== RF06 – Visualização de Saldo
+
+O sistema deve calcular automaticamente:
+
+* Saldo atual;
+* Total de receitas;
+* Total de despesas.
+
+=== RF07 – Relatórios Financeiros
+
+O sistema deve gerar relatórios:
+
+* Mensais;
+* Semanais;
+* Em formato de gráficos (pizza, barras).
+
+=== RF08 – Definição de Metas Financeiras
+
+O sistema deve permitir que o usuário:
+
+* Defina metas de economia;
+* Acompanhe o progresso das metas.
+
+=== RF09 – Exportação de Dados
+
+O sistema deve permitir exportar dados financeiros em formato:
+
+* PDF;
+* CSV.
+
+== Requisitos Não Funcionais (RNF)
+
+Os requisitos não funcionais descrevem como o sistema deve se comportar.
+
+=== RNF01 – Usabilidade
+
+O sistema deve possuir interface simples, intuitiva e responsiva.
+
+=== RNF02 – Segurança
+
+* As senhas devem ser criptografadas;
+* O sistema deve seguir boas práticas de segurança (ex: HTTPS).
+
+=== RNF03 – Desempenho
+
+* O sistema deve responder às ações do usuário em até 2 segundos.
+
+=== RNF04 – Disponibilidade
+
+* O sistema deve estar disponível 24 horas por dia, exceto em períodos de manutenção.
+
+=== RNF05 – Compatibilidade
+
+* O sistema deve funcionar em dispositivos Android versão 8.0 ou superior.
+
+== Restrições do Sistema – FinFlow
+
+As restrições do sistema FinFlow definem os limites técnicos, legais e operacionais que devem ser respeitados durante o desenvolvimento, garantindo viabilidade, segurança e conformidade do projeto.
+
+=== R01 – Restrição Tecnológica
+
+O sistema deverá ser desenvolvido exclusivamente para a plataforma mobile Android, utilizando linguagem e framework definidos pela equipe (ex: Kotlin ou Flutter).
+
+*Justificativa:*
+
+* Público-alvo inicial utiliza majoritariamente Android;
+* Redução de complexidade no desenvolvimento;
+* Limitação de recursos da equipe.
+
+*Impacto:*
+
+* O sistema não estará disponível para iOS na primeira versão;
+* Funcionalidades deverão respeitar limitações da API Android.
+
+=== R02 – Restrição de Banco de Dados
+
+O sistema deverá utilizar banco de dados relacional para armazenamento das informações financeiras dos usuários.
+
+*Justificativa:*
+
+* Estrutura organizada para dados financeiros;
+* Facilidade de modelagem com chaves primárias e estrangeiras;
+* Compatibilidade com arquitetura acadêmica.
+
+*Impacto:*
+
+* Necessidade de modelagem correta (MER);
+* Garantia de integridade referencial.
+
+=== R03 – Restrição de Conectividade
+
+Algumas funcionalidades poderão depender de conexão com a internet, como:
+
+* Backup em nuvem;
+* Exportação online;
+* Atualizações do sistema.
+
+*Justificativa:*
+
+* Segurança dos dados;
+* Possibilidade de sincronização futura.
+
+*Impacto:*
+
+* Sistema deve prever modo offline para funções básicas;
+* Deve tratar falhas de conexão adequadamente.
+
+=== R04 – Restrição Legal (LGPD)
+
+O sistema deverá estar em conformidade com a Lei Geral de Proteção de Dados (LGPD), garantindo:
+
+* Consentimento do usuário para armazenamento de dados;
+* Possibilidade de exclusão de conta;
+* Proteção contra vazamento de informações.
+
+*Justificativa:*
+
+* Dados financeiros são altamente sensíveis;
+* Exigência legal no Brasil.
+
+*Impacto:*
+
+* Implementação de criptografia;
+* Política de privacidade obrigatória.
+
+=== R05 – Restrição de Prazo
+
+O desenvolvimento do sistema deverá ser concluído dentro do prazo acadêmico estabelecido.
+
+*Justificativa:*
+
+* Entrega vinculada à avaliação da disciplina.
+
+*Impacto:*
+
+* Algumas funcionalidades poderão ser simplificadas;
+* Priorização dos requisitos essenciais.
+
+=== R06 – Restrição Orçamentária
+
+O projeto deverá ser desenvolvido utilizando ferramentas gratuitas ou de código aberto.
+
+*Justificativa:*
+
+* Projeto acadêmico sem financiamento externo.
+
+*Impacto:*
+
+* Uso de serviços gratuitos;
+* Limitação de servidores pagos.
+
+=== R07 – Restrição de Complexidade
+
+O sistema deverá manter arquitetura simples e de fácil manutenção, considerando o nível técnico da equipe desenvolvedora.
+
+*Justificativa:*
+
+* Projeto acadêmico;
+* Garantir que todos os membros consigam implementar e entender o código.
+
+*Impacto:*
+
+* Evitar tecnologias muito avançadas;
+* Estrutura modular simples.
+
+=== R08 – Restrição de Dispositivo
+
+O sistema deverá funcionar adequadamente em dispositivos Android versão 8.0 ou superior.
+
+*Justificativa:*
+
+* Compatibilidade com maioria dos dispositivos ativos;
+* Evitar uso de APIs muito recentes.
+
+*Impacto:*
+
+* Interface deve ser leve;
+* Controle de consumo de memória.
