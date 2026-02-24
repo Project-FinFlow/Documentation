@@ -19,7 +19,15 @@ No cenário econômico atual, a gestão eficiente das finanças pessoais tornou-
 
 O projeto Fin-Flow surge como uma solução tecnológica projetada para simplificar esse controle. Trata-se de um aplicativo móvel voltado para a plataforma Android , que combina praticidade e segurança para permitir que usuários finais gerenciem receitas, despesas e metas de economia em um único local. Por meio de uma interface intuitiva e relatórios visuais , o sistema visa transformar dados brutos em informações estratégicas, auxiliando na tomada de decisões financeiras conscientes e em conformidade com as diretrizes da Lei Geral de Proteção de Dados (LGPD).
 
-1.1finalidades
+==finalidades
+
+Centralizar o controle financeiro em um único aplicativo.
+- Facilitar o registro de receitas e despesas, com categorias personalizadas.
+- Acompanhar saldos e metas financeiras, mostrando o progresso de forma clara.
+- Gerar relatórios e gráficos que ajudam a entender melhor os hábitos de
+consumo.
+- Garantir segurança dos dados, respeitando a privacidade do usuário.
+- Apoiar a tomada de decisões, oferecendo informações confiáveis e acessíveis
 
 
 == Visão Geral do Sistema Fin-Flow
