@@ -28,6 +28,7 @@ consumo.
 * Garantir segurança dos dados, respeitando a privacidade do usuário.
 * Apoiar a tomada de decisões, oferecendo informações confiáveis e acessíveis
 
+<<<<<<< HEAD
 == Definições, Acrônimos e Abreviações
 
 === Definições
@@ -95,6 +96,8 @@ Legislação brasileira que regula o tratamento de dados pessoais, garantindo pr
 * *CSV* – Comma-Separated Values  
 * *Config.* – Configuração 
 
+=======
+>>>>>>> e03dcb5f1574c45b5cbf961bb8889bd8bfa1847d
 
 
 == Visão Geral do Sistema Fin-Flow
@@ -338,6 +341,7 @@ O sistema deverá funcionar adequadamente em dispositivos Android versão 8.0 ou
 * Interface deve ser leve;
 * Controle de consumo de memória.
 
+
 == Modelagem do Sistema
 
 === Diagrama de Casos de Uso
@@ -358,4 +362,4 @@ O sistema deverá funcionar adequadamente em dispositivos Android versão 8.0 ou
 
 === Descrição das Classes
 
-(Texto explicando atributos e responsabilidades Futuramente)
+(Texto explicando atributos e responsabilidades Futuramente)git add README.md
