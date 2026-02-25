@@ -7,11 +7,95 @@
 
 ++++
 <div style="display: flex; align-items: center; gap: 15px;">
-  <img src="Images/logo-Fin-Flow.jpeg" width="80" 
-       style="border-radius: 50%;">
+  <img src="images/logo-FinFlow.png" width="80">
   <h1 style="margin: 0;">Fin-Flow</h1>
 </div>
 ++++
+
+== Introdução
+
+No cenário econômico atual, a gestão eficiente das finanças pessoais tornou-se uma competência essencial para a estabilidade e o alcance de objetivos a longo prazo. Entretanto, a fragmentação de gastos e a falta de registros claros muitas vezes impedem que indivíduos tenham uma visão real de sua saúde financeira.
+
+O projeto Fin-Flow surge como uma solução tecnológica projetada para simplificar esse controle. Trata-se de um aplicativo móvel voltado para a plataforma Android , que combina praticidade e segurança para permitir que usuários finais gerenciem receitas, despesas e metas de economia em um único local. Por meio de uma interface intuitiva e relatórios visuais , o sistema visa transformar dados brutos em informações estratégicas, auxiliando na tomada de decisões financeiras conscientes e em conformidade com as diretrizes da Lei Geral de Proteção de Dados (LGPD).
+
+=== Finalidades
+
+* Centralizar o controle financeiro em um único aplicativo.
+* Facilitar o registro de receitas e despesas, com categorias personalizadas.
+* Acompanhar saldos e metas financeiras, mostrando o progresso de forma clara.
+* Gerar relatórios e gráficos que ajudam a entender melhor os hábitos de
+consumo.
+* Garantir segurança dos dados, respeitando a privacidade do usuário.
+* Apoiar a tomada de decisões, oferecendo informações confiáveis e acessíveis
+
+== Definições, Acrônimos e Abreviações
+
+=== Definições
+
+* *Fin-Flow* – Aplicativo móvel de gerenciamento financeiro pessoal voltado ao controle de receitas, despesas, metas e relatórios financeiros.
+
+* *Usuário* – Pessoa física que realiza cadastro no sistema para gerenciar suas finanças pessoais.
+
+* *Receita* – Valor monetário recebido pelo usuário (ex: salário, bônus, vendas).
+
+* *Despesa* – Valor monetário gasto pelo usuário (ex: contas, compras, serviços).
+
+* *Saldo* – Resultado da diferença entre o total de receitas e o total de despesas.
+
+* *Categoria* – Classificação utilizada para organizar receitas e despesas (ex: Alimentação, Transporte, Lazer).
+
+* *Meta Financeira* – Objetivo monetário definido pelo usuário para economia ou investimento.
+
+* *Relatório Financeiro* – Representação visual ou textual dos dados financeiros do usuário, podendo incluir gráficos e tabelas.
+
+* *Autenticação* – Processo de verificação da identidade do usuário para acesso ao sistema.
+
+* *Administrador do Sistema* – Responsável pela manutenção geral e gerenciamento da aplicação.
+
+=== Acrônimos
+
+* *RF – Requisito Funcional*  
+Descrição de uma funcionalidade que o sistema deve executar.  
+Define comportamentos, ações ou serviços que o sistema deve oferecer ao usuário.
+
+* *RNF – Requisito Não Funcional*  
+Define características de qualidade do sistema, como desempenho, segurança, usabilidade e disponibilidade.  
+Não descreve o que o sistema faz, mas como ele deve se comportar.
+
+* *R – Restrição*  
+Limitação técnica, legal, financeira ou operacional que impacta o desenvolvimento do sistema.
+
+* *BD – Banco de Dados*  
+Sistema responsável pelo armazenamento, organização e recuperação das informações do aplicativo.
+
+* *API – Application Programming Interface*  
+Conjunto de regras e padrões que permitem a comunicação entre sistemas ou componentes de software.
+
+* *UI – User Interface*  
+Interface do Usuário.  
+Parte visual do sistema com a qual o usuário interage (telas, botões, menus).
+
+* *UX – User Experience*  
+Experiência do Usuário.  
+Refere-se à percepção e satisfação do usuário ao utilizar o sistema.
+
+* *CRUD – Create, Read, Update, Delete*  
+Conjunto das quatro operações básicas realizadas em um banco de dados:  
+Criar, Ler, Atualizar e Excluir dados.
+
+* *LGPD – Lei Geral de Proteção de Dados*  
+Legislação brasileira que regula o tratamento de dados pessoais, garantindo privacidade e segurança das informações.
+ 
+=== Abreviações
+
+* *App* – Aplicativo  
+* *Ex.* – Exemplo  
+* *Obs.* – Observação  
+* *PDF* – Portable Document Format  
+* *CSV* – Comma-Separated Values  
+* *Config.* – Configuração 
+
+
 
 == Visão Geral do Sistema Fin-Flow
 
@@ -253,3 +337,25 @@ O sistema deverá funcionar adequadamente em dispositivos Android versão 8.0 ou
 
 * Interface deve ser leve;
 * Controle de consumo de memória.
+
+== Modelagem do Sistema
+
+=== Diagrama de Casos de Uso
+
+++++
+<div style="display: flex; align-items: center; gap: 15px;">
+  <img src="images/diagrama.jpeg" width="600">
+</div>
+++++
+
+=== Descrição dos Casos de Uso
+
+(Texto explicando cada caso)
+
+=== Diagrama de Classes
+
+(Imagem futuramente aqui)
+
+=== Descrição das Classes
+
+(Texto explicando atributos e responsabilidades Futuramente)
