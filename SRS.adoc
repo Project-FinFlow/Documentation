@@ -28,7 +28,6 @@ consumo.
 * Garantir segurança dos dados, respeitando a privacidade do usuário.
 * Apoiar a tomada de decisões, oferecendo informações confiáveis e acessíveis
 
-<<<<<<< HEAD
 == Definições, Acrônimos e Abreviações
 
 === Definições
@@ -95,9 +94,6 @@ Legislação brasileira que regula o tratamento de dados pessoais, garantindo pr
 * *PDF* – Portable Document Format  
 * *CSV* – Comma-Separated Values  
 * *Config.* – Configuração 
-
-=======
->>>>>>> e03dcb5f1574c45b5cbf961bb8889bd8bfa1847d
 
 
 == Visão Geral do Sistema Fin-Flow
