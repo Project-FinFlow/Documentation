@@ -25,7 +25,7 @@ Por meio dos diagramas apresentados, é possível compreender tanto a estrutura 
 
 ++++
 <div style="display: flex; align-items: center; gap: 15px;">
-  <img src="../images/diagramaCasos.png" width="600">
+  <img src="../Assets/images/diagramaCasos.png" width="600">
 </div>
 ++++
 
