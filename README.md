@@ -2,8 +2,7 @@
 
 Aplicativo mobile para controle de finanças pessoais.
 
-<img src="images/logo-FinFlow.png"
-  width= "100" height="100" >
+<img src="/Assets/images/logo-FinFlow.png" width= "100" height="100">
 
 ## 📌 Objetivo
 
@@ -26,5 +25,6 @@ Auxiliar usuários no controle de receitas, despesas e metas financeiras.
 ## 📄 Documentação
 
 A documentação completa está disponível em: [Documento de Especificação de Requisitos](SRS.adoc)
+
 
 
