@@ -217,7 +217,7 @@ Fluxo Principal:
 
 ++++
 <div style="display: flex; align-items: center; gap: 15px;">
-  <img src="../images/diagramadeclasse.png" width="600">
+  <img src="../Assets/images/diagramadeclasse.png" width="600">
 </div>
 ++++
 
