@@ -1,0 +1,155 @@
+= Documento de Arquitetura de Software
+:subtitle: Documento de Arquitetura de Software (SAD).
+:toc:
+:toc-title: Sumário (Tabela de Conteúdos)
+:sectnums:
+:toclevels: 3
+
+++++
+<div style="display: flex; align-items: center; gap: 15px;">
+  <img src="../Assets/images/logo-FinFlow.png" width="80">
+  <h1 style="margin: 0;">Fin-Flow</h1>
+</div>
+++++
+
+
+== Introdução
+
+=== Objetivo
+
+Este documento tem como objetivo descrever a arquitetura do sistema Fin-Flow, apresentando sua organização estrutural, componentes, tecnologias utilizadas e decisões arquiteturais adotadas durante o desenvolvimento.
+
+=== Escopo
+
+O Fin-Flow é um sistema de gestão financeira pessoal que permite ao usuário registrar receitas e despesas, acompanhar saldo, definir metas financeiras e gerar relatórios.
+
+=== Definições, Acrônimos e Abreviações
+
+* DAS – Documento de Arquitetura de Software
+* API – Application Programming Interface
+* MVC – Model-View-Controller
+* CRUD – Create, Read, Update, Delete
+
+
+== Visão Geral da Arquitetura
+
+O sistema Fin-Flow segue uma arquitetura baseada em separação de responsabilidades, organizada em camadas, promovendo modularidade, manutenção e escalabilidade.
+
+A arquitetura é composta por:
+
+* Camada de Apresentação
+* Camada de Aplicação (Lógica de Negócio)
+* Camada de Persistência
+* Banco de Dados
+
+
+== Representação Arquitetural
+
+=== Camada de Apresentação (Frontend)
+
+Responsável pela interface com o usuário.
+
+Funções principais:
+* Exibição de telas
+* Coleta de dados do usuário
+* Envio de requisições para o backend
+* Exibição de relatórios e saldo
+
+=== Camada de Aplicação (Backend)
+
+Responsável pelas regras de negócio do sistema.
+
+Funções principais:
+* Validação de dados
+* Processamento de receitas e despesas
+* Cálculo automático de saldo
+* Controle de metas financeiras
+* Geração de relatórios
+
+=== Camada de Persistência
+
+Responsável pela comunicação com o banco de dados.
+
+Funções principais:
+* Inserção de dados
+* Atualização de registros
+* Exclusão de informações
+* Consultas financeiras
+
+=== Banco de Dados
+
+Responsável pelo armazenamento permanente das informações.
+
+Entidades principais:
+* Usuario
+* Receita
+* Despesa
+* Categoria
+* MetaFinanceira
+* Saldo
+
+
+== Padrão Arquitetural
+
+O sistema adota o padrão MVC (Model-View-Controller).
+
+* Model: Representa as entidades do sistema (Usuario, Receita, Despesa, etc.)
+* View: Interface gráfica apresentada ao usuário.
+* Controller: Responsável por intermediar requisições entre View e Model.
+
+Esse padrão foi escolhido por facilitar organização do código, reutilização e manutenção.
+
+
+== Tecnologias Utilizadas
+
+As tecnologias adotadas no desenvolvimento incluem:
+
+* Linguagem de Programação: (Definir conforme seu projeto)
+* Banco de Dados: (Ex: MySQL, PostgreSQL, etc.)
+* Framework: (Se houver)
+* Ferramentas de Versionamento: Git e GitHub
+
+
+== Requisitos Arquiteturais
+
+=== Requisitos Funcionais
+
+* Permitir cadastro e login de usuários
+* Registrar receitas e despesas
+* Calcular saldo automaticamente
+* Gerar relatórios financeiros
+* Exportar dados
+
+=== Requisitos Não Funcionais
+
+* Segurança no armazenamento de senhas
+* Disponibilidade do sistema
+* Desempenho adequado para consultas financeiras
+* Interface intuitiva
+* Escalabilidade futura
+
+
+== Segurança
+
+O sistema implementa:
+
+* Autenticação de usuários
+* Proteção de rotas
+* Criptografia de senha
+* Controle de acesso por perfil (Usuário e Administrador)
+
+
+== Decisões Arquiteturais
+
+As principais decisões tomadas foram:
+
+* Separação em camadas para melhor organização
+* Uso do padrão MVC
+* Armazenamento estruturado das entidades financeiras
+* Atualização automática do saldo com base em receitas e despesas
+
+Essas decisões garantem maior organização, manutenção facilitada e possibilidade de expansão futura do sistema.
+
+== Considerações Finais
+
+A arquitetura do Fin-Flow foi projetada visando organização, clareza estrutural e facilidade de manutenção. A separação em camadas e o uso do padrão MVC permitem que o sistema seja expandido futuramente, incluindo novos módulos e funcionalidades.

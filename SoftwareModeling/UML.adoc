@@ -1,0 +1,379 @@
+= Modelagem do Sistema
+:subtitle: Documento de Linguagem de Modelagem Unificada (UML).
+:toc:
+:toc-title: Sumário (Tabela de Conteúdos)
+:sectnums:
+:toclevels: 3
+
+++++
+<div style="display: flex; align-items: center; gap: 15px;">
+  <img src="../Assets/images/logo-FinFlow.png" width="80">
+  <h1 style="margin: 0;">Fin-Flow</h1>
+</div>
+++++
+
+
+== Introdução
+
+Este documento apresenta a modelagem do sistema Fin-Flow, desenvolvida com o objetivo de representar, de forma visual e estruturada, os principais elementos que compõem a aplicação. A modelagem foi realizada utilizando a UML (Unified Modeling Language), linguagem padrão amplamente adotada na engenharia de software para especificação, visualização e documentação de sistemas orientados a objetos.
+
+Por meio dos diagramas apresentados, é possível compreender tanto a estrutura quanto o comportamento do sistema. O Diagrama de Casos de Uso descreve as funcionalidades disponíveis e a interação entre os atores e o sistema. Já o Diagrama de Classes detalha a organização interna, apresentando classes, atributos, métodos e seus relacionamentos.
+
+
+
+== Diagrama de Casos de Uso
+
+++++
+<div style="display: flex; align-items: center; gap: 15px;">
+  <img src="../images/diagramaCasos.png" width="600">
+</div>
+++++
+
+---
+
+=== Atores
+
+* Usuário
+* Administrador
+
+
+== Casos de Uso
+
+=== UC01 - Cadastro
+
+*Ator: Usuário*
+
+*Descrição:*
+Permite que um novo usuário crie uma conta no sistema.
+
+Fluxo Principal: 
+
+* 1. O usuário acessa a opção de cadastro.
+* 2. O sistema exibe o formulário de cadastro.
+* 3. O usuário preenche os dados solicitados.
+* 4. O sistema valida as informações.
+* 5. O sistema autentica via Google (opcional).
+* 6. O cadastro é concluído com sucesso.
+* 7. O usuário é redirecionado para a interface principal.
+
+=== UC02 - Login
+
+*Ator: Usuário*
+
+Descrição:
+Permite que um usuário já cadastrado acesse o sistema.
+
+Fluxo Principal:
+
+* 1. O usuário acessa a tela de login.
+* 2. O usuário informa suas credenciais.
+* 3. O sistema valida os dados.
+* 4. O sistema autentica via Google (opcional).
+* 5. O usuário é redirecionado para a interface do sistema.
+
+=== UC03 - Registrar Receitas
+
+*Ator: Usuário*
+
+Descrição:
+Permite registrar valores recebidos.
+
+Fluxo Principal:
+
+* 1. O usuário seleciona a opção "Registrar Receita".
+* 2. O usuário informa valor, data e categoria.
+* 3. O sistema valida os dados.
+* 4. O sistema armazena a receita.
+* 5. O saldo é atualizado automaticamente.
+
+=== UC04 - Registrar Despesas
+
+*Ator: Usuário*
+
+Descrição:
+Permite registrar gastos realizados.
+
+Fluxo Principal:
+* 1. O usuário seleciona a opção "Registrar Despesa".
+* 2. O usuário informa valor, data, categoria e forma de pagamento.
+* 3. O sistema valida as informações.
+* 4. O sistema registra a despesa.
+* 5. O saldo é recalculado automaticamente.
+
+=== UC05 - Visualizar Saldos
+
+*Ator: Usuário*
+
+Descrição:
+Permite consultar a situação financeira atual.
+
+Fluxo Principal:
+1. O usuário acessa a opção "Visualizar Saldos".
+2. O sistema calcula automaticamente:
+   * Total de receitas
+   * Total de despesas
+   * Saldo atual
+3. O sistema exibe as informações na interface.
+
+=== UC06 - Gerenciar Categorias
+
+*Ator: Usuário*
+
+Descrição:
+Permite criar, editar ou excluir categorias personalizadas.
+
+Fluxo Principal:
+
+* 1. O usuário acessa "Gerenciar Categorias".
+* 2. O usuário escolhe criar, editar ou excluir uma categoria.
+* 3. O sistema valida a operação.
+* 4. O sistema atualiza as categorias cadastradas.
+
+=== UC07 - Definir Metas
+
+*Ator: Usuário*
+
+Descrição:
+Permite estabelecer e acompanhar metas financeiras.
+
+Fluxo Principal:
+
+* 1. O usuário acessa "Definir Metas".
+* 2. O usuário informa valor e prazo da meta.
+* 3. O sistema registra a meta.
+* 4. O sistema calcula automaticamente o progresso.
+* 5. O sistema exibe o percentual alcançado.
+
+=== UC08 - Gerar Relatório
+
+*Ator: Usuário*
+
+Descrição:
+Permite gerar relatórios financeiros detalhados.
+
+Fluxo Principal:
+
+* 1. O usuário seleciona "Gerar Relatório".
+* 2. O usuário define período ou categoria.
+* 3. O sistema processa os dados.
+* 4. O relatório é exibido na tela.
+
+=== UC09 - Exportar Dados
+
+*Ator: Usuário*
+
+Descrição:
+Permite exportar dados financeiros do sistema.
+
+Fluxo Principal:
+
+* 1. O usuário seleciona "Exportar Dados".
+* 2. O usuário escolhe o formato (PDF ou planilha).
+* 3. O sistema gera o arquivo.
+* 4. O download é disponibilizado.
+
+=== UC10 - Gerenciar Usuários
+
+*Ator: Administrador*
+
+Descrição:
+Permite controlar as contas cadastradas no sistema.
+
+Fluxo Principal:
+
+* 1. O administrador acessa o painel administrativo.
+* 2. O sistema exibe a lista de usuários.
+* 3. O administrador pode editar, bloquear ou excluir contas.
+* 4. O sistema confirma a operação.
+
+=== UC11 - Categorias Padrão
+
+*Ator: Administrador*
+
+Descrição:
+Permite gerenciar categorias padrão do sistema.
+
+Fluxo Principal:
+
+* 1. O administrador acessa a área de categorias padrão.
+* 2. O administrador cria ou edita categorias globais.
+* 3. O sistema salva as alterações.
+
+=== UC12 - Manutenção Geral
+
+*Ator: Administrador*
+
+Descrição:
+Permite realizar manutenção técnica do sistema.
+
+Fluxo Principal:
+
+* 1. O administrador acessa o painel de manutenção.
+* 2. O sistema permite atualizações e correções.
+* 3. O administrador executa a ação desejada.
+* 4. O sistema confirma a operação.
+
+=== Diagrama de Classes
+
+++++
+<div style="display: flex; align-items: center; gap: 15px;">
+  <img src="../images/diagramadeclasse.png" width="600">
+</div>
+++++
+
+== Diagrama de Classes
+
+O Diagrama de Classes do Fin-Flow representa a estrutura estática do sistema, demonstrando suas principais entidades, atributos, métodos e relacionamentos. Ele define como os objetos são organizados e como interagem dentro da aplicação.
+
+== Classe: Usuario
+
+=== Descrição
+Representa o ator principal do sistema, responsável por acessar e gerenciar as informações financeiras.
+
+=== Atributos
+* id: int
+* nome: string
+* email: string
+* senha: string
+
+=== Métodos
+* Cadastrar()
+* Login()
+* Logout()
+
+=== Relacionamentos
+* Possui Receitas
+* Possui Despesas
+* Possui MetasFinanceiras
+* Possui um Saldo
+
+
+== Classe: Receita
+
+=== Descrição
+Representa os valores recebidos pelo usuário.
+
+=== Atributos
+* id: int
+* valor: double
+* data: date
+* descricao: string
+
+=== Métodos
+* Cadastrar()
+* EditarReceita()
+* ExcluirReceita()
+
+=== Relacionamentos
+* Pertence a um Usuario
+
+
+== Classe: Despesa
+
+=== Descrição
+Representa os gastos realizados pelo usuário.
+
+=== Atributos
+* id: int
+* valor: double
+* data: date
+* descricao: string
+* formaPagamento: string
+
+=== Métodos
+* CadastrarDespesa()
+* EditarDespesa()
+* ExcluirDespesa()
+
+=== Relacionamentos
+* Pertence a um Usuario
+* Está associada a uma Categoria
+* Impacta o Saldo
+
+
+
+== Classe: Categoria
+
+=== Descrição
+Responsável por organizar receitas e despesas por tipo.
+
+=== Atributos
+* id: int
+* nome: string
+* tipo: string
+
+=== Métodos
+* CriarCategoria()
+* EditarCategoria()
+* ExcluirCategoria()
+
+=== Relacionamentos
+* Classifica Despesas
+* Pode classificar Receitas
+
+
+== Classe: Saldo
+
+=== Descrição
+Representa o controle consolidado das finanças do usuário.
+
+=== Atributos
+* id: int
+* saldoAtual: float
+* totalReceitas: int
+* totalDespesas: int
+
+=== Responsabilidade
+* Armazenar o saldo atual
+* Controlar o total de receitas
+* Controlar o total de despesas
+
+=== Relacionamentos
+* Está associado a um Usuario
+* É atualizado com base em Receitas e Despesas
+
+
+== Classe: MetaFinanceira
+
+=== Descrição
+Permite ao usuário definir e acompanhar objetivos financeiros.
+
+=== Atributos
+* id: int
+* valor: double
+* valorMeta: double
+* valorAtual: double
+* dataLimite: date
+
+=== Métodos
+* CriarMeta()
+* AtualizarMeta()
+
+=== Relacionamentos
+* Pertence a um Usuario
+
+
+== Classe: Relatorio
+
+=== Descrição
+Responsável por gerar relatórios financeiros consolidados.
+
+=== Atributos
+* periodo: string
+* totalReceitas: double
+* totalDespesas: double
+
+=== Métodos
+* GerarRelatorio()
+
+=== Relacionamentos
+* Utiliza dados de Receita
+* Utiliza dados de Despesa
+* Pode considerar Categoria
+
+
+== Considerações Finais
+
+O Diagrama de Classes do Fin-Flow demonstra uma modelagem orientada a objetos organizada, onde o Usuario é a entidade central do sistema. As classes Receita e Despesa representam as operações financeiras, enquanto Saldo e Relatorio são responsáveis pela consolidação e análise dos dados. A classe Categoria organiza os registros e MetaFinanceira permite o planejamento financeiro do usuário.
+
+Essa estrutura favorece organização, manutenção e escalabilidade do sistema.

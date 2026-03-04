@@ -7,7 +7,7 @@
 
 ++++
 <div style="display: flex; align-items: center; gap: 15px;">
-  <img src="images/logo-FinFlow.png" width="80">
+  <img src="../Assets/images/logo-FinFlow.png" width="80">
   <h1 style="margin: 0;">Fin-Flow</h1>
 </div>
 ++++
@@ -336,26 +336,3 @@ O sistema deverá funcionar adequadamente em dispositivos Android versão 8.0 ou
 
 * Interface deve ser leve;
 * Controle de consumo de memória.
-
-
-== Modelagem do Sistema
-
-=== Diagrama de Casos de Uso
-
-++++
-<div style="display: flex; align-items: center; gap: 15px;">
-  <img src="images/diagrama.jpeg" width="600">
-</div>
-++++
-
-=== Descrição dos Casos de Uso
-
-(Texto explicando cada caso)
-
-=== Diagrama de Classes
-
-(Imagem futuramente aqui)
-
-=== Descrição das Classes
-
-(Texto explicando atributos e responsabilidades Futuramente)git add README.md
